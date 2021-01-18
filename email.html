@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddingstudy : 스터디 개설</title>
+</head>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+.ttl{
+    color: whitesmoke;
+    background-color: gray;
+    height: 150px;
+
+}
+h2{
+    font-style: oblique;
+    font-family: sans-serif;
+    bottom: 300%;
+}
+
+</style>
+
+<body>
+    <form method="post">
+        <input type="button" value="Send Email" onclick="sendEmail('hello test succ')"/>
+
+    </form>
+    <script type="text/javascript">
+        function sendEmail(Body){
+            Email.send({
+                Host : "smtp.gmail.com",
+                SecureToken : "f6e521ec-c043-4dc9-9dd5-fd2400fe3b82",
+                Username : "ddingstudy02@gmail.com",
+                Password : "chlgyals123",
+                To : 'ddingstudy02@gmail.com',
+                From : "ddingstudy02@gmail.com",
+                Subject : "New Study Request",
+                Body : Body
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script>
+    
+    <div class = "ttl">
+        <center><h2>신규 스터디를 개설하고 싶어요!</h2></center>
+    </div>
+
+
+    <p>같이 배우고 싶은 학문이 있나요? 여러 학생들과 함께 공부하고 싶나요?
+        신규스터디를 개설하세요! <br> <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a>
+        으로 스터디명, 스터디소개(한줄), 과목, 대표이미지(선택), 본인소개, 인원수를 보내주세요!
+    </p>
+    <button onclick="location.href='index.html';">돌아가기</button>
+
+
+    
+
+
+
+</body>
+</html>
