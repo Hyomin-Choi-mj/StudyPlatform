@@ -3,25 +3,28 @@
     height: 500px;
     width: 300px;
     background-color: #ecf0f1;
-    margin: 30px auto;
+    margin: auto;
+    border-radius: 9%;
 
 }
 
 .header{
+    border-radius: 9%;
     position: absolute;
     height : 240px;
     left: 0;
     right: 0;
     top: 0;
+
     background-image: linear-gradient(to right,#1dd1a1,#1abc9c);
 }
 .header img{
     position: absolute;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    left:90px;
-    top:50px;
+    height: 130px;
+    width: 270px;
+    border-radius: 9%;
+    left:15px;
+    top:45px;
     
 }
 .header h3{ /*스터디 이름*/
@@ -46,6 +49,7 @@
 }
 
 .body{
+    border-radius: 9%;
     position: absolute;
     height: 126px;
     left: 5px;
@@ -126,34 +130,6 @@ body ul li {
 
 }
 
-footer{
-    position: absolute;
-    height: 80px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to right, #e2e1e1, #ecf0f1);
-}
-
-
-footer ul{
-    position: absolute;
-    left: -60px;
-
-}
-
-footer ul li{
-    display: inline-block;
-    margin-left: 60px;
-
-}
-
-footer ul li i {
-    font-size: 30px;
-    color: #7f8c8d;
-    transition : all .3s ease-in;
-
-}
 
 footer ul li:hover i {
     transform: scale(0.9);
@@ -173,57 +149,4 @@ footer ul li:hover i {
     background-color: black;
     color: whitesmoke;
     height: 150px;
-}
-/*---------------------------------*/
-
-.popup .overlay{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0, 0, 0.7);
-    z-index: 1;
-    display: none;
-}
-
-.popup .content{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    background: black;
-    width: 450px;
-    height: 220px;
-    z-index: 2;
-    text-align:center;
-    padding: 20px;
-    box-sizing: border-box;
-} 
-
-.popup .close-btn{
-    position: absolute;
-    right:20px;
-    top:20px;
-    width:30px;
-    height:30px;
-    background:#222;
-    color:#fff;
-    font-size: 25px;
-    font-weight: 600;
-    line-height:30px;
-    text-align: center;
-    border-radius: 50%;
-}
-
-.popup .active .overlay{
-    display: block;
-
-}
-
-.popup .active .content{
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%,-50%) scale(1);
-
-
 }

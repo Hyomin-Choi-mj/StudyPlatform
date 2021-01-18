@@ -23,23 +23,12 @@ h2{
 
 <body>
     <form method="post">
-        <input type="button" value="Send Email" onclick="sendEmail('hello test succ')"/>
+        <input type="button" value="TBtn" onclick="sendEmail('hello test succ')"/>
 
     </form>
     <script type="text/javascript">
-        function sendEmail(Body){
-            Email.send({
-                Host : "smtp.gmail.com",
-                SecureToken : "f6e521ec-c043-4dc9-9dd5-fd2400fe3b82",
-                Username : "ddingstudy02@gmail.com",
-                Password : "chlgyals123",
-                To : 'ddingstudy02@gmail.com',
-                From : "ddingstudy02@gmail.com",
-                Subject : "New Study Request",
-                Body : Body
-            }).then(
-            message => alert(message)
-            );
+        function showup(id){
+            
         }
     </script>
     
