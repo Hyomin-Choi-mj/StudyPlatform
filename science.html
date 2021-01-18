@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Study Group</title>
 </head>
+<script>
+    function isShow(link){
+        if(confirm("신청하시겠습니까?")){
+            open(link)
+        }else{
+            alert('취소되었습니다.');
+        }
+    }
+</script>
 <body>
+
     <header>
         <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">mat</a></li>
-            <li><a href="#">sci</a></li>
-            <li><a href="#">lan</a></li>
-            <li><a href="#">hum</a></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="math.html">mat</a></li>
+            <li><a href="#"><u>sci</u></a></li>
+            <li><a href="lang.html">lan</a></li>
+            <li><a href="human.html">hum</a></li>
         </ul>
     </header>
     <section class="banner"></section>
@@ -25,12 +35,26 @@
     </script>
 
     <br><br><br>
+
+    <hr><br><br><center>
+    <h2><i><b>Science Group</b></i></h2> 
+    </center>
+    <br><br>
+    <hr>
+
+
+
+
+
+
+    <br><br><br>
     <div class = "card">
         <h1>Physics 101</h1>
         <div class = "content">
             <h2>Physics 101</h2><!--그룹명-->
             <p>In this article, we will learn how to send mail usi</p>
-            <button class="submit" onclick="">btn</button>
+            
+            <button class="submit" onclick="isShow('https://www.google.com')">btn</button>
         </div>
     </div>
     <br>
@@ -57,5 +81,14 @@
 
 
     
+    <hr><br>
+    <center><i><u><h5>
+        dding_study <br>
+        Contact : <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a><br>
+        <br>
+
+    </h5></u></i></center>
+
+
 </body>
 </html>
