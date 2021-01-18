@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="lang-style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lang Study Group</title>
+    <title>Language Study Group</title>
 </head>
+<script>
+    function isShow(link){
+        if(confirm("신청하시겠습니까?")){
+            open(link)
+        }else{
+            alert('취소되었습니다.');
+        }
+    }
+</script>
 <body>
+
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="math.html">mat</a></li>
+            <li><a href="science.html">sci</a></li>
+            <li><a href="lang.html"><u>lan</u></a></li>
+            <li><a href="human.html">hum</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky")
+        })
+    </script>
+
+    <br><br><br>
+
+    <hr><br><br><center>
+    <h2><i><b>The magician of language</b></i></h2> 
+    </center>
+    <br><br>
+    <hr>
+
+
+
+
+
+
+    <br><br><br>
+    <div class = "card">
+        <h1>Hello</h1>
+        <div class = "content">
+            <h2>Perfect</h2>
+            <p><i>
+                Darling, you looked perfect tonight.
+
+            </i></p>
+            
+            <button class="submit" onclick="isShow('https://www.google.com')">btn</button>
+        </div>
+    </div>
+    <br>
+
+    <div class = "card">
+        <h1>こんにちは</h1>
+        <div class = "content">
+            <h2>出会い</h2>
+            <p>いつも幸せでした。あなたの好きになった日から、常に。</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
+    <br>
+
+    <div class = "card">
+        <h1>你好</h1>
+        <div class = "content">
+            <h2>瓦长江龙</h2>
+            <p>真正的强度是柔软度。</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
+    <br>
+
+
     
+    <hr><br>
+    <center><i><u><h5>
+        dding_study <br>
+        Contact : <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a><br>
+        <br>
+
+    </h5></u></i></center>
+
+
 </body>
 </html>

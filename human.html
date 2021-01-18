@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="hum-style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Humanities</title>
+    <title>Humanities Study Group</title>
 </head>
+<script>
+    function isShow(link){
+        if(confirm("신청하시겠습니까?")){
+            open(link)
+        }else{
+            alert('취소되었습니다.');
+        }
+    }
+</script>
 <body>
+
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="math.html">mat</a></li>
+            <li><a href="science.html">sci</a></li>
+            <li><a href="lang.html">lan</a></li>
+            <li><a href="human.html"><u>Hum</u></a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky")
+        })
+    </script>
+
+    <br><br><br>
+
+    <hr><br><br><center>
+    <h2><i><b>Warm Heart</b></i></h2> 
+    </center>
+    <br><br>
+    <hr>
+
+
+
+
+
+
+    <br><br><br>
+    <div class = "card">
+        <h1>역사</h1>
+        <div class = "content">
+            <h2>History</h2><!--그룹명-->
+            <p> 역사를 잊은 민족에게<br> 미래는 없다 <br> - 단재 신채호 -  </p>
+            
+            <button class="submit" onclick="isShow('https://www.google.com')">btn</button>
+        </div>
+    </div>
+    <br>
+
+    <div class = "card">
+        <h1>미술</h1>
+        <div class = "content">
+            <h2>Art</h2><!--그룹명-->
+            <p> 행동은<br> 모든 성공의 기본 열쇠이다. <br> - 피카소 -  </p>
+            
+            <button class="submit" onclick="isShow('https://www.google.com')">btn</button>
+        </div>
+    </div>
+    <br>
+
+
+    <div class = "card">
+        <h1>음악</h1>
+        <div class = "content">
+            <h2>Music</h2><!--그룹명-->
+            <p>성공과 실패 중에  <br>택1을 해라 너 <br> - VVS -</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
+    <br>
+
+
     
+    <hr><br>
+    <center><i><u><h5>
+        dding_study <br>
+        Contact : <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a><br>
+        <br>
+
+    </h5></u></i></center>
+
+
 </body>
 </html>

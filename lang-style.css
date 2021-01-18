@@ -62,7 +62,7 @@ header ul li a{
 .card{
     position: relative;
     width: 300px;
-    height: 450px;
+    height: 250px;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -78,7 +78,7 @@ header ul li a{
     color: whitesmoke;
     left: 51%;
     transform: translateX(-50%);
-    height: 400px ;
+    height: 250px ;
     visibility: visible;
 }
 .card:hover h1{
@@ -105,13 +105,13 @@ header ul li a{
 .card:hover .submit{
     opacity: 1;
     visibility: visible;
-    transform: translateY(800%);
+    transform: translateY(250%);
     left: 60%;
 }
 .card:hover .content{
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     left: 5%;
 
 }

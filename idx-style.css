@@ -18,7 +18,7 @@
 .card{
     position: relative;
     width: 300px;
-    height: 450px;
+    height: 250px;
     margin: auto;
     display: flex;
     justify-content: flex-start;
@@ -30,7 +30,7 @@
 
 .card h1{
     position: absolute;
-    bottom: -20%;
+    bottom: -80%;
     color: whitesmoke;
     left: 51%;
     transform: translateX(-50%);
@@ -44,7 +44,7 @@
 }
 .card .content{
     position: relative;
-    width: 50%;
+    width: 70%;
     left: 20%;
     opacity: 0;
     visibility: hidden;
@@ -61,13 +61,13 @@
 .card:hover .submit{
     opacity: 1;
     visibility: visible;
-    transform: translateY(800%);
+    transform: translateY(70%);
     left: 60%;
 }
 .card:hover .content{
     opacity: 1;
     visibility: visible;
-    transform: translateY(-50%);
+    transform: translateY(0%);
     left: 5%;
 
 }
