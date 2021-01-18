@@ -1,140 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="sci-style.css">
 <head>
-    <script src="https://kit.fontawesome.com/956f7f24fa.js" crossorigin="anonymous">
-    
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>띵터디 : 명지대학교 신입생 스터디룸</title>
+    <title>Mathmatics Study Group</title>
 </head>
-
 <script>
-function showup(page){
-    
-    if(confirm("신청글로 넘어갑니다")){
-        open(page)
-    }else{
-        alert('신청을 취소합니다.')
+    function isShow(link){
+        if(confirm("신청하시겠습니까?")){
+            open(link)
+        }else{
+            alert('취소되었습니다.');
+        }
     }
-}
-
 </script>
-
 <body>
-    <div class = "ttl">
-        <br><br>
-        <center><h1>dding Study</h1></center>
-    </div>
 
-    <br>
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="math.html"><u>mat</u></a></li>
+            <li><a href="#">sci</a></li>
+            <li><a href="lang.html">lan</a></li>
+            <li><a href="human.html">hum</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky")
+        })
+    </script>
 
+    <br><br><br>
 
-    <button onclick="location.href='email.html';">새로운 스터디 개설하기</button>
-    
-    <h3>Group list</h3>
+    <hr><br><br><center>
+    <h2><i><b>Mathmatics Group</b></i></h2> 
+    </center>
+    <br><br>
     <hr>
-    <br>
-    <br>
 
-    <!--------------------------->
+
+
+
+
+
+    <br><br><br>
     <div class = "card">
-        <div class = "header">
-            <img src="mojaram.png">
-            <h3>알파테크닉 스터디</h3>
-            <p>'모'자람이 없는 수학 스터디!</p>
-
-        </div>
-
-        <div class = "body">
-            <ul>
-                <li>
-                    
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Tutors</h3>
-                    <p>21학번 아무개</p>
-                </li>
-                <li>
-                    <i class="fas fa-user-graduate"></i>
-                    <h3>튜터 이메일</h3>
-                    <p>add@email.com</p>
-                </li>
-                <li>
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>한줄 강의설명</h3>
-                    <p>이 스터디는 진지합니다.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <h3>인원수</h3>
-                    <p>N명</p>
-                </li>
-                
-
-                <button class ="apply" type="button" onclick="showup('https://forms.gle/JhWfrLMhUHCTguUs6')"><h5>스터디 신청</b></h5></button>
-            </ul>
+        <h1>Calculus 101</h1>
+        <div class = "content">
+            <h2>Calculus 101</h2><!--그룹명-->
+            <p>In this article, we will learn how to send mail usi</p>
             
+            <button class="submit" onclick="isShow('https://www.google.com')">btn</button>
         </div>
-        <div class = "footer">
-            <ul>
-                <li>
-                
-                </li>
-            </ul>
-        </div>
-
     </div>
+    <br>
 
-    <!--------------------------->
     <div class = "card">
-        <div class = "header">
-            <img src="mojaram.png">
-            <h3>알파테크닉 스터디</h3>
-            <p>'모'자람이 없는 수학 스터디!</p>
-
+        <h1>Geometry 101</h1>
+        <div class = "content">
+            <h2>Geometry 101</h2><!--그룹명-->
+            <p>In this article, we will learn how to send mail usi</p>
+            <button class ="submit"onclick="">btn</button>
         </div>
-
-        <div class = "body">
-            <ul>
-                <li>
-                    
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Tutors</h3>
-                    <p>21학번 아무개</p>
-                </li>
-                <li>
-                    <i class="fas fa-user-graduate"></i>
-                    <h3>튜터 이메일</h3>
-                    <p>add@email.com</p>
-                </li>
-                <li>
-                    <i class="fas fa-clipboard-list"></i>
-                    <h3>한줄 강의설명</h3>
-                    <p>이 스터디는 진지합니다.</p>
-                </li>
-                <li>
-                    <i class="fas fa-users"></i>
-                    <h3>인원수</h3>
-                    <p>N명</p>
-                </li>
-                
-
-                <button class ="apply" type="button"><h5>스터디 신청</b></h5></button>
-            </ul>
-            
-        </div>
-        <div class = "footer">
-            <ul>
-                <li>
-                
-                </li>
-            </ul>
-        </div>
-
     </div>
+    <br>
+
+    <div class = "card">
+        <h1>Algebra 101</h1>
+        <div class = "content">
+            <h2>Algebra 101</h2><!--그룹명-->
+            <p>In this article, we will learn how to send mail usi</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
+    <br>
+
 
     
+    <hr><br>
+    <center><i><u><h5>
+        dding_study <br>
+        Contact : <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a><br>
+        <br>
+
+    </h5></u></i></center>
+
+
 </body>
 </html>
