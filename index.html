@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="idx-style.css">
 <head>
-    <script src="https://kit.fontawesome.com/956f7f24fa.js" crossorigin="anonymous">
-    
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>띵터디 : 명지대학교 신입생 스터디룸</title>
+    <title>Science Study Group</title>
 </head>
-
 <script>
-function showup(page){
-    
-    if(confirm("신청글로 넘어갑니다")){
-        open(page)
-    }else{
-        alert('신청을 취소합니다.')
+    function isShow(link){
+        if(confirm("신청하시겠습니까?")){
+            open(link)
+        }else{
+            alert('취소되었습니다.');
+        }
     }
-}
-
 </script>
-
 <body>
-    <div class = "ttl">
-        <br><br>
-        <center><h1>dding Study</h1></center>
+    <br><br>
+    <h1><i><b>dding Study</b></i></h1><br><br>
+    <hr><br><br><br>
+    <h2>Discription</h2>
+
+
+
+
+
+    <br><br><br>
+    <div class = "card">
+        <u><h1><i>Mathmatics</i></h1></u>
+        <br>
+        <div class = "content">
+            <h2>Mathmatics</h2><!--그룹명-->
+            <br>
+            <p>수학1부터 미적분까지 <br> 수학을 완성해야 학점도 완성됩니다.
+            </p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
     </div>
-
     <br>
 
-
-    <button onclick="location.href='email.html';">새로운 스터디 개설하기</button>
-    
-    <button onclick="location.href='science.html';">자연과학 스터디</button>
-    <h3>Group list</h3>
-    <hr>
+    <div class = "card">
+        <u><h1><i>Science</i></h1></u>
+        
+        <div class = "content">
+            <h2>Science</h2><!--그룹명-->
+            <br>
+            <p>물리, 화학, 생물 어떤것도 등한시 되어서는 안됩니다.</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
     <br>
+
+    <div class = "card">
+        <u><h1><i>Languages</i></h1></u>
+        <div class = "content">
+            <h2>Languages</h2><!--그룹명-->
+            <br>
+            <p>외국어 스터디에서 공부하고 원어민과 자유롭게 대화하세요.</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
+    <br>
+
+    <div class = "card">
+        <u><h1><i>Humanities</i></h1></u>
+        <div class = "content">
+            <h2>Humanities</h2><!--그룹명--> <br>
+            <p>모든 학문은 <br> 인문학을 만나야 <br> 비로소 완벽해집니다.</p>
+            <button class ="submit"onclick="">btn</button>
+        </div>
+    </div>
     <br>
 
     
-    
+    <hr><br>
+    <center><i><u><h5>
+        dding_study <br>
+        Contact : <a href="ddingstudy02@gmail.com">ddingstudy02@gmail.com</a><br>
+        <br>
+
+    </h5></u></i></center>
+
+
 </body>
 </html>
