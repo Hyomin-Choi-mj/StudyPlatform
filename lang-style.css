@@ -14,6 +14,7 @@
     min-height: 100vh;
 }
 header{
+    background-color: whitesmoke;
     position: fixed;
     top: 0;
     left: 0;
