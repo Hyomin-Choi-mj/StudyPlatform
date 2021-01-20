@@ -7,90 +7,71 @@
     <title>@dding</title>
 </head>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-<script>
-    function isShow(link){
-        if(confirm("신청하시겠습니까?")){
-            open(link)
-        }else{
-            alert('취소되었습니다.');
-        }
-    }
-</script>
+
+
 <script>
     document.addEventListener("touchstart", function() {}, true);
 </script>
 
-    <style type = "text/css">
-        body{
-            background-image: url(mju.png) ;
-            background-size: contain;
-            background-repeat: no-repeat;
-            
-            background-attachment:scroll;
-        }
-        .content{
-            background: whitesmoke;
-            opacity: 0;
-            width:100%;
-            padding: 40px;
-            margin: 10x auto;
-            font-weight: calibri;
-        }
-        p{
-            font-size: 25px;
-            color: black;
-        }
-        i{
-            color: whitesmoke;
-        }
-        .hello i{
-            color:rgb(51, 39, 39)
-        }
-    </style>
-
     <body>
-
-        <nav>
-            <input type="checkbox"  id="check">
-            <label for="check" class = "checkbtn">
-                <i class ="fas fa-bars"></i>
-            </label>
-            <label class = "logo">@dding_Study.</label>
-            <ul>
-                <li><a class = "active" href="index.html">Home</a></li>
-                <li><a href="math.html">수학</a></li>
-                <li><a href="science.html">과학</a></li>
-                <li><a href="lang.html">외국어</a></li>
-                <li><a href="human.html">인문학/독서</a></li>
-                <li><a href="#">신규 스터디 개설</a></li>
-                <li><a href="#">Contact</a></li>
-
-            </ul>
-        </nav>
-        <br><br>
-        <center><font size = 14px><b><i>@dding_study.</i></b></font></center>
         
-        <div class = "content">
-            <br><br>
-            <p>
-                
-            </p>
+        <header> 
+            <nav>
+                <input type="checkbox"  id="check">
+                <label for="check" class = "checkbtn">
+                    <i class ="fas fa-bars"></i>
+                </label>
+                <label class = "logo">@dding_Study.</label>
+                <ul>
+                    <li><a class = "active" href="index.html">Home</a></li>
+                    
+                    <li><a href="math.html">수학</a></li>
+                    <li><a href="science.html">과학</a></li>
+                    <li><a href="lang.html">외국어</a></li>
+                    <li><a href="human.html">인문학/독서</a></li>
+                    <li><a href="#">신규 스터디 개설</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <section class="banner"></section>
+
+        <br><br><br><br><br><br><br><br><br>
+        <div class = "lookslikebodybutitsnot">
+            
+            
+            <div class = "container">
+                <div class = "card">
+                    <div class = "imgBx">
+                        <img src="mju.png">
+                    </div>
+                    <div class = "content">
+                        <h2>Card One</h2>
+                        <p>Lorem ipsum dolor sit Vel, nihil?</p>
+                    </div>
+                    <div class = "imgBx">
+                        <img src="mju.png">
+                    </div>
+                    <div class = "content">
+                        <h2>Card One</h2>
+                        <p>Lorem ipsum dolor sit Vel, nihil?</p>
+                    </div>
+                    <div class = "imgBx">
+                        <img src="mju.png">
+                    </div>
+                    <div class = "content">
+                        <h2>Card One</h2>
+                        <p>Lorem ipsum dolor sit Vel, nihil?</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            
+
         </div>
-
-
-        <div class = "hello">
-            <p>
-                <h1><i>Hello World!</i></h1>
-            </p>
-        </div>
-
-
-
-
-
-
-
-
 
 
 
