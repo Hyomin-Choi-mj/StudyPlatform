@@ -139,7 +139,7 @@ a.active,a:hover{
 }
 .lookslikebodybutitsnot .container{
     position:absolute;
-    transform: translateY(17%);
+    transform: translateY(23%);
     display: flex;
     justify-content: space-between;
     align-items: center;
