@@ -89,7 +89,7 @@ header ul li a{
 }
 .card .content{
     position: relative;
-    width: 50%;
+    width: 70%;
     left: 20%;
     opacity: 0;
     visibility: hidden;
