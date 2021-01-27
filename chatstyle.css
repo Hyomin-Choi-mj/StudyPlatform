@@ -92,3 +92,11 @@ i{
     margin-left: 7px;
     width: 45%;
 }
+.body .others {
+    color: black;
+
+}.body .mine {
+    float: right;
+    color: black;
+
+}
