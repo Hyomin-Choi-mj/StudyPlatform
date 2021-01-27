@@ -24,6 +24,7 @@ body{
 .header h2{
     color:white;
     padding: auto;
+    width: 50%;
 }
 .body{
     flex: 1;
@@ -73,4 +74,21 @@ form button{
 form button:hover{
     background-color:blue;
     transition: 0.2s ease;
+}
+i{
+    color: whitesmoke;
+   
+}
+
+.setting{
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+    width: 50%;
+}
+.return{
+    background: transparent;
+    border: none;
+    margin-left: 7px;
+    width: 45%;
 }
