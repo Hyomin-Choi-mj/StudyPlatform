@@ -21,7 +21,7 @@ include_once('./lib.php');
     function confirmter(){
       alert("잠깐!")
       if(confirm("이대로 등록하시겠습니까?")){
-        location.href='./view.php?idx=<?php echo $row->idx?>';
+      //  location.href='./view2.php?idx=<?php echo $row->idx?>';
       }
       else{
         return false;
@@ -56,15 +56,37 @@ include_once('./lib.php');
     </center>
     <br><br>
     <hr>
-    <form action="upload_ok.php" method="post">
+    <form action="update_ok.php" method="post">
         <center> 자신의 스터디를 소개해주세요. </center>
         <p>
         스터디명: <input type="text" placeholder="스터디 명을 입력하세요. " name="study"style="width:300px; height:50px;" required>
       </p>
       <br>
       <p>
-    	과목: <input type="text" placeholder="스터디할 과목을 입력하세요. " name="subject"style="width:300px; height:50px;" required>
-    </p>
+        과목:
+        <select name="subject">
+          <option>과목</option>
+          <optgroup label="수학">
+            <option value="고등수학">고등수학</option>
+            <option value="대학수학">대학수학</option>
+          </optgroup>
+          <optgroup label="과학">
+            <option value="자연과학">자연과학</option>
+            <option value="응용과학/공학">응용과학/공학</option>
+          </optgroup>
+          <optgroup label="외국어">
+            <option value="영어">영어</option>
+            <option value="기타">기타</option>
+          </optgroup>
+          <optgroup label="인문학/독서">
+            <option value="역사">역사</option>
+            <option value="말하기">말하기</option>
+            <option value="독서">독서</option>
+
+          </optgroup>
+        </select>
+
+              </p>
     <br>
     <p>
     작성자: <input type="text" placeholder="이름을 입력하세요. " name="name"style="width:300px; height:50px;" required>
@@ -83,7 +105,7 @@ include_once('./lib.php');
   </p>
 
     	<button type="submit" onclick="confirmter()">완료</button> <br><br>
-    	<button type="button" onclick="location.href = './view.php?idx=<?php echo $row->idx?>'">취소</button>
+    	<button type="button" onclick="location.href = 'index.php'">취소</button>
     </form>
 
 

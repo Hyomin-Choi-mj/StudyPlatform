@@ -8,7 +8,7 @@
     <div align='center'>
         <span>로그인</span>
 
-        <form method='get' action='login_action.php'>
+        <form method='post' action='login_action.php'>
                 <p>EMAIL: <input name="email" type="text"></p>
                 <p>PW: <input name="password" type="password"></p>
                 <input type="submit" value="로그인">

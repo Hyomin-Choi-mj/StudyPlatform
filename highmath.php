@@ -1,9 +1,3 @@
-<?php
-  require_once("./db.php");
-  $pdo = db_connect();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="mathclass.css">
@@ -12,29 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고등수학 스터디</title>
 </head>
-<?php
-<script>
-  if($people>=5)
-  {
-    alert("마감되었습니다.");
-  }
 
-  else{
-    function isShow(link){
-        if(confirm("신청하시겠습니까?")){
-            $people++;
-            open(link)
-        }else{
-            alert('취소되었습니다.');
-        }
-    }
-  }
-</script>
+
 <script>
     document.addEventListener("touchstart", function() {}, true);
 </script>
-?>
+
 <body>
+<!--
+  <script>
+  function isShow(){
+          // $count = $count + 1;
+          //mysqli_query($conn, "UPDATE phptest SET people = '{$count}' WHERE idx = 1");
+
+  }
+-->
+  </script>
 
     <header>
         <ul>
@@ -62,10 +49,29 @@
         <hr>
     </div>
     <br><br>
+    <?php
+    include_once('lib.php');
+    $idx = $_GET['idx'] ?? NULL;
+    $sql = "SELECT * FROM board WHERE idx = '{$idx}'";
+    //$row = fetch($sql);
+      $conn = mysqli_connect('localhost', 'kmc0487', 'dot0487!', 'kmc0487');
+
+    //  $sql = "SELECT * FROM board WHERE idx = '{$idx}'";
+      $result = mysqli_query($conn, $sql);
+      $row = mysqli_fetch_array($result);
+      $count = $row['count'];
+      $sql2 = "SELECT * FROM board WHERE subject = '고등수학'";
+      $rows = fetchAll($sql2);
+      foreach ($rows as $value) {
+      if ($rows == NULL) { ?><center><h2>등록된 스터디가 없습니다. 새로운 스터디를 만들어보세요!</h2></center>
+       <br><br> <button type = "button" onclick= "location.href='newstudy.php'" >신규 스터디 개설하기</button><?php
+       }
+       else{
+    ?>
     <div class = "container">
         <div class = "card">
             <div class = "StudyCover">
-                <center><h1>명지고등수학</h1><h2>21 전공자유학부 권OO<br>4명 / 비대면</h2></center>
+                <center><h1>명지고등수학</h1><h2>21 전공자유학부 권OO<br><?php echo $count;?>명/ 비대면</h2></center>
             </div>
             <div class = "content">
                 <br><br><br><br><br><br><br><br><br><br><br>
@@ -75,22 +81,64 @@
                     개인톡으로 상담 및 문제풀이 안내를 진행합니다.<br>
                     기하를 제외한 고등수학 전과목을 스터디합니다!
 
+
                 </p><br>
                 <div class="wrapper">
-                    <div class="btn">
-                        <button type = "button" onclick="isShow('https://open.kakao.com/o/sTBeN5Sc')">신청하기</button>
-                    </div>
+                      <?php if($count >= 5): ?>
+                             <?php echo "마감"; ?>
+                             <br>
+                              <a href="mailto:cmk0487@naver.com" title= "고딩수학 마감">관리자에게 문의 보내기</a>
+                      <?php else:  ?>
+                        <div class="btn">
+                           <button type = "button" onclick= "location.href='check.php'" > 신청하기 </button>
+                         </div>
+
+                      <?php endif?>
+
+
+
                 </div>
 
             </div>
 
         </div>
     </div>
+    <br><br>
+    <div class = "container">
+        <div class = "card">
+            <div class = "StudyCover">
+                <center><h1><?php echo $row->study ?></h1><h2><?php echo $row->name ?><br><?php echo $count;?>명/ <?php echo $row->population ?>명</h2></center>
+                <center><h2>활동장소: <?php echo $row->place ?></h2></center>
+
+            </div>
+            <div class = "content">
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p>
+                    <?php echo $row->content ?>
+                </p><br>
+                <div class="wrapper">
+                      <?php if($count >= $row->population): ?>
+                             <?php echo "마감"; ?>
+                             <br>
+                              <a href="mailto:cmk0487@naver.com" title= "고딩수학 마감">관리자에게 문의 보내기</a>
+                      <?php else:  ?>
+                        <div class="btn">
+                           <button type = "button" onclick= "location.href='check.php'" > 신청하기 </button>
+                         </div>
+
+                      <?php endif?>
 
 
 
+                </div>
 
+            </div>
 
+        </div>
+    </div>
+    <?php
+  }}
+    ?>
 
 
 

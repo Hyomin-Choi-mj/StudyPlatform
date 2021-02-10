@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="wrap">
-      <form action="join_action2.php" method="post">
+      <form action="join_action.php" method="post">
         <h2>SignUp</h2>
 		<u>
 			<input type="text" name="name" placeholder="회원명" required>

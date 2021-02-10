@@ -1,3 +1,6 @@
+<?php
+include_once('./lib.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="idx-style.css">
@@ -14,6 +17,7 @@
 </script>
 
     <body>
+      <?php if(isset($_SESSION['email'])): ?>
 
         <header>
             <nav>
@@ -21,10 +25,10 @@
                 <label for="check" class = "checkbtn">
                     <i class ="fas fa-bars"></i>
                 </label>
-                <label class = "logo">@dding_Study.</label>
+                <label class = "logo" href="index.php">@dding_Study.</label>
                 <ul>
-                    <li><a class = "active" href="index.html">Home</a></li>
-
+                    <li><a class = "active" href="mypage.php">내 정보</a></li>
+                    <li><a class = "active" href="logout.php">logout</a></li>
                     <li><a href="math.php">수학</a></li>
                     <li><a href="science.php">과학</a></li>
                     <li><a href="lang.php">외국어</a></li>
@@ -35,6 +39,29 @@
                 </ul>
             </nav>
         </header>
+        <section class="banner"></section>
+      <?php else: ?>
+        <header>
+            <nav>
+                <input type="checkbox"  id="check">
+                <label for="check" class = "checkbtn">
+                    <i class ="fas fa-bars"></i>
+                </label>
+                <label class = "logo">@dding_Study.</label>
+                <ul>
+                    <li><a class = "active" href="index.php">Home</a></li>
+                    <li><a class = "active" href="login.php">login</a></li>
+                    <li><a href="math.php">수학</a></li>
+                    <li><a href="science.php">과학</a></li>
+                    <li><a href="lang.php">외국어</a></li>
+                    <li><a href="human.php">인문학/독서</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <section class="banner"></section>
+      <?php endif?>
 
         <section class="banner"></section>
 
